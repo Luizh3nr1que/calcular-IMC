@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icones/favicon.ico" type="image/x-icon">
+    <title>Indice de Massa Corporal</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <p class="texto">IMC significa <span style="color: rgb(15, 180, 0);">Indice de Massa Corporal</span> e
+            é uma medida que indica se uma pessoa está acima do peso, abaixo do
+            peso
+            ou com peso normal, com base na relação entre sua altura e peso.</p><br>
+        <h1 id="Imc">Ver seu <button class="imc">IMC</button></h1>
+        <label>Qual seu nome?</label>
+        <input class="input" required id="nome" type="text" placeholder="digite seu nome">
+
+        <label>Sua idade?</label>
+        <input class="input" required type="number" placeholder="Digite sua idade">
+
+        <label>Qual seu peso?</label>
+        <input class="input" required type="number" name="peso" id="peso" placeholder="Digite Seu peso">
+
+        <label for="">Sua altura?</label>
+        <input class="input" required type="number" name="altura" id="altura" placeholder="digite sua altura"><br>
+
+        <button class="btn" type="submit" id="button">Resultado</button>
+        <button class="btn" id="limpar">limpar</button>
+        <div class="res">
+            <h1></h1>
+        </div>
+        <div class="erro">
+
+        </div>
+
+    </div>
+
+    <script src="java.js"></script>
+</body>
+
+</html>
