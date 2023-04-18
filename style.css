@@ -47,19 +47,19 @@ h1 {
     height: 30px;
     font-size: 17px;
     margin: auto;
-    transition: all 1s;
+    transition: all 0.2s;
     max-width: 190px;
     font-weight: bold;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .input:hover {
-    border-top-width: 0.2em;
+    border-top-width: 0.1em;
     background-color: #f1e8e8;
 }
 
 .input:focus {
-    border-top-width: 0.2em;
+    border-top-width: 0.1em;
     background-color: #f1e8e8;
 }
 
@@ -93,6 +93,7 @@ h1 {
 }
 
 #button {
+    margin-right: 25px;
     margin-top: 20px;
 }
 
@@ -155,4 +156,9 @@ p {
         bottom: 0;
         opacity: 1;
     }
+}
+
+#limpar {
+    padding-left: 20px;
+    padding-right: 20px;
 }

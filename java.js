@@ -16,12 +16,12 @@ document.getElementById('button').addEventListener('click', () => {
         const imc = peso / Math.pow(altura, 2)
 
         if (imc < 18.5) {
-            res.innerHTML = `${nome} está Abaixo do peso`;
+            res.innerHTML = `${nome} Está Abaixo do peso`;
             res.classList.add('normal');
             res.classList.remove('medo');
             res.classList.remove('pesado');
         } else if (imc >= 18.5 && imc < 25) {
-            res.innerHTML = `${nome} está com peso normal`;
+            res.innerHTML = `${nome} Está com peso padrão`;
             res.classList.add('normal');
             res.classList.remove('medo');
             res.classList.remove('pesado');
