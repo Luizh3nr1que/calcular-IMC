@@ -4,13 +4,14 @@ document.getElementById('button').addEventListener('click', () => {
 
     const peso = document.getElementById('peso').value;
     const altura = document.getElementById('altura').value;
-
     const nome = document.getElementById('nome').value;
 
     const res = document.querySelector('.res');
     const erro = document.querySelector('.erro');
+    const aviso = document.querySelector('.aviso');
 
     erro.innerHTML = '';
+    aviso.innerHTML = '';
 
     if (peso && altura && nome) {
         const imc = peso / Math.pow(altura, 2)
@@ -48,7 +49,19 @@ document.getElementById('button').addEventListener('click', () => {
 });
 
 document.getElementById('limpar').addEventListener('click', () => {
-    location.reload(5000);
+    const peso = document.getElementById('peso');
+    const altura = document.getElementById('altura');
+    const nome = document.getElementById('nome');
+    const aviso = document.querySelector('.aviso');
+
+    if (peso.value === '' && altura.value === '' && nome.value === '') {
+        aviso.innerHTML = 'Nada para limpar ! '
+        aviso.classList.add('pesado');
+        aviso.style.marginTop = '10px';
+    } else {
+        location.reload(5000)
+    }
+
 })
 
 document.querySelector('.imc').addEventListener('click', () => {
