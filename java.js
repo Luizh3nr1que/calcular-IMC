@@ -18,7 +18,7 @@ document.getElementById('button').addEventListener('click', () => {
         const imc = peso / Math.pow(altura, 2)
 
         if (imc < 18.5) {
-            res.innerHTML = `Continue se cuidando, ${nome}, você está no caminho certo para uma vida saudável!`;
+            res.innerHTML = `Cuidado, ${nome}, seu peso está abaixo do ideal para uma vida saudável!`;
             res.classList.add('normal');
             res.classList.remove('medo');
             res.classList.remove('pesado');
