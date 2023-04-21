@@ -72,7 +72,9 @@ h1 {
     margin-bottom: 10px;
 }
 
-
+a {
+    color: rgb(15, 180, 0);
+}
 
 .genero {
     display: flex;
