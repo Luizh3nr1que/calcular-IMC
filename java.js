@@ -56,17 +56,19 @@ document.getElementById('limpar').addEventListener('click', () => {
     const aviso = document.querySelector('.aviso');
     const idade = document.getElementById('idade');
     const res = document.querySelector('.res');
+    const erro = document.querySelector('.erro');
 
     if (peso.value === '' && altura.value === '' && nome.value === '') {
         aviso.innerHTML = 'Nada para limpar ! '
         aviso.classList.add('pesado');
         aviso.style.marginTop = '10px';
     } else {
-        peso.value = ''
-        altura.value = ''
-        nome.value = ''
-        idade.value = ''
-        res.innerHTML = ''
+        peso.value = '';
+        altura.value = '';
+        nome.value = '';
+        idade.value = '';
+        res.innerHTML = '';
+
     }
 
 })
