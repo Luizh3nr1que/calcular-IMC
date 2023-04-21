@@ -20,11 +20,18 @@
             peso
             ou com peso normal, com base na relação entre sua altura e peso.</p><br>
         <h1 id="Imc">Ver seu <button class="imc">IMC</button></h1>
+        <div class="genero ">
+            <label class="masc selecionadoM" for="homem">Homem</label>
+            <input type="radio" id="homem" name="genero" value="homem">
+
+            <label class="fem" for="mulher">Mulher</label>
+            <input type="radio" id="mulher" name="genero" value="mulher">
+        </div>
         <label>Qual seu nome?</label>
         <input class="input" required id="nome" type="text" placeholder="digite seu nome">
 
         <label>Sua idade?</label>
-        <input class="input" required type="number" placeholder="Digite sua idade" min="2">
+        <input class="input" required id="idade" type="number" placeholder="Digite sua idade" min="2">
 
         <label>Qual seu peso?</label>
         <input class="input" required type="number" name="peso" id="peso" placeholder="Digite Seu peso">
@@ -32,7 +39,7 @@
         <label for="">Sua altura?</label>
         <input class="input" required type="number" name="altura" id="altura" placeholder="digite sua altura"><br>
 
-        <button class="btn" type="submit" id="button">Ver IMC</button>
+        <button class="btn" type="submit" id="button">Calcular</button>
         <button class="btn" id="limpar">Limpar</button>
         <div class="res">
             <h1></h1>

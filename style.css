@@ -73,6 +73,49 @@ h1 {
 }
 
 
+
+.genero {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.masc {
+
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px solid rgb(5, 111, 197);
+    margin-right: 20px;
+}
+
+.fem {
+
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 2px solid rgb(185, 39, 88);
+}
+
+.selecionadoM {
+    background-color: rgb(0, 83, 151);
+}
+
+.selecionadoF {
+    background-color: rgb(185, 39, 88);
+}
+
 .res {
     font-size: 20px;
     margin-top: 30px;
